@@ -3,8 +3,7 @@ package com.darian.BaTJ_face_Question.partternDemo.pay_strategy;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * <br>
- * <br>Darian
+ *
  **/
 public class StragegyDemo {
     public static void main(String[] args) {

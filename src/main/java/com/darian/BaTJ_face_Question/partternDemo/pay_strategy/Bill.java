@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * <br>
- * <br>Darian
+ * 一个单据，里边有一个一个的细项 List
  **/
 public class Bill {
     private List<Item> items = new ArrayList<>();

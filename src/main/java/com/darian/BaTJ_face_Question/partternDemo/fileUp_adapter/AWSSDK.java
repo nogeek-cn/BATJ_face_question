@@ -1,11 +1,10 @@
 package com.darian.BaTJ_face_Question.partternDemo.fileUp_adapter;
 
 /**
- * <br>
- * <br>Darian
+ * 亚马逊 上传文件的 SDK
  **/
-public class AWSJDK {
+public class AWSSDK {
     public void putObject(String fileName){
-        System.out.println("user AWSJDK upload file:" + fileName);
+        System.out.println("user AWSSDK upload file:" + fileName);
     }
 }

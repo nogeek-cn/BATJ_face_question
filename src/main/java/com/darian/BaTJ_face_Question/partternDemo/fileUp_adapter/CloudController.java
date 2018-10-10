@@ -1,14 +1,18 @@
 package com.darian.BaTJ_face_Question.partternDemo.fileUp_adapter;
 
 /**
- * <br>
- * <br>Darian
+ * web 层对外提供，上传文件接口
  **/
 public class CloudController {
 
-    CloudService cloudService;
+    private CloudService cloudService;
+
+    public CloudController(CloudService cloudService) {
+        this.cloudService = cloudService;
+    }
 
     public void storeFileToCloud(){
         cloudService.uploadFile("darian的私人项目");
     }
+
 }

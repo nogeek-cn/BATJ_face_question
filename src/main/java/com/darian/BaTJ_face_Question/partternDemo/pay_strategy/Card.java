@@ -5,8 +5,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * <br>
- * <br>Darian
+ * 各种银行卡的支付
  **/
 public abstract class Card implements PaymentMethod {
     // 面向具体对象的方式去编码

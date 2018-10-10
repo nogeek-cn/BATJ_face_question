@@ -3,8 +3,7 @@ package com.darian.BaTJ_face_Question.partternDemo.pay_strategy;
 import org.springframework.stereotype.Service;
 
 /**
- * <br>
- * <br>Darian
+ * 信用卡
  **/
 @Service
 public class DebitCard extends Card{

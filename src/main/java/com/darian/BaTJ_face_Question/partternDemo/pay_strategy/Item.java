@@ -3,8 +3,9 @@ package com.darian.BaTJ_face_Question.partternDemo.pay_strategy;
 import lombok.Data;
 
 /**
- * <br>
- * <br>Darian
+ * 商品的细项
+ * 名字
+ * 价格
  **/
 @Data
 public class Item {

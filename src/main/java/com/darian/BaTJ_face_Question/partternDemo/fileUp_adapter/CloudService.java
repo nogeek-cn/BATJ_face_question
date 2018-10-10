@@ -1,14 +1,19 @@
 package com.darian.BaTJ_face_Question.partternDemo.fileUp_adapter;
 
 /**
- * <br>
- * <br>Darian
+ * 我只关心的上传功能，
+ * 我不想传一些
+ * 不同 SDK 时，不同的参数。
  **/
 public class CloudService {
 
-    AWSJDK awsjdk;
+    CloudSDK cloudSDK;
 
-    public void uploadFile(String fileName){
-        awsjdk.putObject(fileName);
+    public CloudService(String cloudStrategy) {
+        this.cloudSDK = CloudFactory.create(cloudStrategy);
+    }
+
+    public void uploadFile(String fileName) {
+        cloudSDK.putObject(fileName);
     }
 }

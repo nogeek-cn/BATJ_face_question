@@ -1,8 +1,7 @@
 package com.darian.BaTJ_face_Question.partternDemo.pay_strategy;
 
 /**
- * <br>
- * <br>Darian
+ * 根据不同的支付方式，构造并返回一个支付的接口
  **/
 public class PaymentMethodFactory {
     public static PaymentMethod getPaymentMethod(String type) {
