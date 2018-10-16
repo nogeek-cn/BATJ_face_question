@@ -9,5 +9,29 @@
         http://www.springframework.org/schema/context/spring-context-3.0.xsd"
         default-autowire="byName">
 
-    <context:component-scan base-package="com.darian.BaTJ_face_Question.partternDemo"/>
+    <context:component-scan base-package="com.darian.BaTJ_face_Question._05_partternDemo"/>
+
+    <!-- set 注入 -->
+    <bean name="demoController" class="com.darian.BaTJ_face_Question._12_autowiredDemo.DemoController">
+        <property name="demo" ref="demo"/>
+    </bean>
+
+    <!-- 原型模式 -->
+    <bean name="demo" class="com.darian.BaTJ_face_Question._12_autowiredDemo.Demo" scope="prototype"/>
+    <!-- 单例模式 -->
+    <!--<bean name="demo" class="com.darian.BaTJ_face_Question._12_autowiredDemo.Demo" scope="singleton"/>-->
+
+    <!-- 构造注入 -->
+    <bean name="demoControllerConstor" class="com.darian.BaTJ_face_Question._12_autowiredDemo.DemoControllerConstor">
+        <constructor-arg index="0" ref="demo"></constructor-arg>
+        <constructor-arg index="1" ref="demo"></constructor-arg>
+    </bean>
+
+    <bean name="demoStatic" class="com.darian.BaTJ_face_Question._12_autowiredDemo.DemoFactory"
+          factory-method="getInstance"></bean>
+    <!-- 静态工厂注入 -->
+    <bean name="demoControllerStatic" class="com.darian.BaTJ_face_Question._12_autowiredDemo.DemoControllerStatic">
+        <property name="demo" ref="demoStatic"></property>
+    </bean>
+
 </beans>
