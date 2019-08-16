@@ -79,9 +79,9 @@ public class NIOServer {
             }
             buffer.clear();
         } else if (key.isWritable()) {
-            SocketChannel client = (SocketChannel) key.channel();
-            client.write(buffer.wrap("Hello Wold".getBytes()));
-            client.close();
+//            SocketChannel client = (SocketChannel) key.channel();
+//            client.write(buffer.wrap("Hello Wold".getBytes()));
+//            client.close();
         }
     }
     public static void main(String[] args) {

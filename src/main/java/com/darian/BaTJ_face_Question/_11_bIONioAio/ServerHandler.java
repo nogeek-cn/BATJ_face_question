@@ -24,11 +24,11 @@ public class ServerHandler implements Runnable {
             int len = 0;
             //读取客户端的数据
             while ((len = in.read(buffer)) > 0) {
-                System.out.println(new String(buffer, 0, len));
+//                System.out.println(new String(buffer, 0, len));
             }
             //向客户端写数据
             OutputStream out = socket.getOutputStream();
-            out.write("hello everybody!".getBytes());
+//            out.write("hello everybody!".getBytes());
         } catch (IOException e) {
             e.printStackTrace();
         }

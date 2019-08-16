@@ -22,10 +22,10 @@ public class StringSwap {
     public static String swap(String str1, String str2, String overrideSet) throws NoSuchFieldException, IllegalAccessException {
         Field field = String.class.getDeclaredField("value");
         field.setAccessible(true);
-        String tmp = new String(str1);
-        field.set(str1, str2.toCharArray());
-        field.set(str2, tmp.toCharArray());
-        overrideSet = "Stringbefore";
+//        String tmp = new String(str1.toCharArray());
+//        field.set(str1, str2.toCharArray());
+//        field.set(str2, tmp.toCharArray());
+//        overrideSet = "Stringbefore";
         return overrideSet;
     }
 }

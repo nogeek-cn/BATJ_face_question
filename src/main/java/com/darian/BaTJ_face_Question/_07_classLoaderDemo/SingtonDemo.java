@@ -17,14 +17,14 @@ public class SingtonDemo {
         count2++;
     }
 
-    public static SingtonDemo getInstance(){
+    public static SingtonDemo getInstance() {
         return instance;
     }
 
     public static void main(String[] args) {
         SingtonDemo.getInstance();
-        System.out.println("count1="+count1);
-        System.out.println("count2="+count2);
+        System.out.println("count1= " + count1);
+        System.out.println("count2= " + count2);
 
     }
 }
