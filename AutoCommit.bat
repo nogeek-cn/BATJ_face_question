@@ -4,8 +4,8 @@ git status
 git add * 
 git commit -m "%commit_msg%" 
 git pull gitee master
-git push gitee master
 git pull github master
+git push gitee master
 git push github master
 :: git pull origin master
 :: git push origin master 
